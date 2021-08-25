@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_topics/services/local_notification.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -14,9 +15,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Flutter topics"),
+        title: const Text("Local notifications"),
       ),
-      body:const Center(child: Text("hello world"),),
+      body: Center(
+        child: TextButton(
+          onPressed: () {},
+          child: const Text("Send notification")),),
     );
   }
 }
